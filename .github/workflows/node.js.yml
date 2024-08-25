@@ -25,8 +25,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     
-    # Assuming your package-lock.json is in a subdirectory, specify the path
     - run: npm ci
-      working-directory: ./CI_CD-practises-2/CI_CD-practises-2
     - run: npm run build --if-present
-      working-directory: ./CI_CD-practises-2/CI_CD-practises-2
